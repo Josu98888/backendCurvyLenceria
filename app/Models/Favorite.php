@@ -18,8 +18,8 @@ class Favorite extends Model
         'updated_at',
     ];
 
-    public function products() {
-        return $this->hasMany(Product::class);
+    public function product() {
+        return $this->belongsTo(Product::class);
     }
 
     public function user() {
