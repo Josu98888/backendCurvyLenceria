@@ -27,4 +27,16 @@ class Product extends Model
     public function images() {
         return $this->hasMany(Image::class);
     }
+
+    public function favorites() {
+        return $this->hasMany(Favorite::class);
+    }
+
+    public function producstnormal() {
+        return $this->hasMany(Productnormal::class);
+    }
+
+    public function productssize() {
+        return $this->hasMany(Productsize::class);
+    }
 }
