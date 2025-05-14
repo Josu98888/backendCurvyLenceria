@@ -19,4 +19,12 @@ class Review extends Model
         'created_at',
         'updated_at',
     ];
+
+    function user() {
+        return $this->belongsTo(User::class);
+    }
+
+    function product() {
+        return $this->belongsTo(Product::class);
+    }
 }
