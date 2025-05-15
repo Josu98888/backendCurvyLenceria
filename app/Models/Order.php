@@ -23,4 +23,8 @@ class Order extends Model
         'created_at',
         'updated_at'
     ];
+
+    public function address() {
+        return $this->belongsTo(Address::class);
+    }
 }
